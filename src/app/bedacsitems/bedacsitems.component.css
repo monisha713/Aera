@@ -1,0 +1,95 @@
+.example-card {
+    max-width: 600px;
+    border-radius: 10px !important;
+    background-color: rgb(202, 174, 201) !important;
+  }
+  
+  .example-header-image {
+    /* background-image: url(''); */
+    background-size: cover;
+  }
+  
+.image-size{
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    align-self: center;
+}
+.card-open-button{
+    align-self: center !important;
+    border-radius: 10px;
+    background-color: white;
+    height: 20px !important;
+    width: 80px !important;
+   
+}
+.mdc-card__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 40px !important;
+    padding: 8px;
+    justify-content: center!important;
+    align-self: center !important;
+}
+.mat-mdc-card-content {
+    display: block;
+    padding:  16px !important;
+    
+}
+.card-padding{
+    padding: 16px !important;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.example-disabled {
+  display: inline-block;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.mat-mdc-raised-button {
+  height: var(--mdc-protected-button-container-height, 36px);
+  border-radius: var(--mdc-protected-button-container-shape, var(--mdc-shape-small, 4px));
+  /* background-color: coral!important; */
+  box-shadow: var(--mdc-protected-button-container-elevation, 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12));
+}
+
+.btnselected {
+  background-color: rgb(73, 183, 67);
+}
+
+.btnnotselected {
+  background-color: rgb(254, 163, 16);
+}

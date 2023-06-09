@@ -1,0 +1,31 @@
+<div *ngFor = "let baitems of ba">
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{baitems.name}}</mat-card-title>
+        <mat-card-subtitle>Price: {{baitems.price}}</mat-card-subtitle>    
+        
+        <div class="example-button-row">
+          <button mat-raised-button style="background-color: white;"
+          
+          (click)="addItemCart(baitems)">Add to Cart</button>          
+        </div>
+    
+        <img mat-card-lg-image src="{{baitems.image}}" >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="card-padding">
+            <mat-card-actions >
+            
+            
+
+            </mat-card-actions>
+        </div>
+     
+    </mat-card-content>
+  </mat-card>
+  <br>
+</div>
+<!-- [style.background-color]="toggle ? 'rgb(254, 163, 16)' : 'rgb(73, 183, 67)'"  -->
+

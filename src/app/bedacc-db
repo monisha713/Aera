@@ -1,0 +1,42 @@
+
+
+export const BEDACC: any = [
+
+    {        
+        id: 1,
+        name:"Mattress",
+        price:600
+    },
+    {
+        id: 2,
+        name:"Pillows",
+        price:200
+    },
+    {
+        id: 3,
+        name:"Mattress topper",
+        price:250
+    },
+
+    {
+        id: 4,
+        name:"Ruffles",
+        price:100
+    },
+    {
+        id: 5,
+        name:"Duvet",
+        price:100
+    },
+    {
+        id: 6,
+        name:"Decorative pillows",
+        price:100
+    },
+   
+];
+
+
+export function findBedacceById(bedaccId:number) {
+    return BEDACC.find(bedacc => bedacc.id === bedaccId);
+}

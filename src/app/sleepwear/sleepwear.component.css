@@ -1,0 +1,43 @@
+.example-card {
+    max-width: 330px;
+    border-radius: 10px !important;
+    background-color: lightpink !important;
+  }
+  
+  .example-header-image {
+    /* background-image: url(''); */
+    background-size: cover;
+  }
+  
+.image-size{
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    align-self: center;
+}
+.card-open-button{
+    align-self: center !important;
+    border-radius: 10px;
+    background-color: white;
+    height: 20px !important;
+    width: 80px !important;
+   
+}
+.mdc-card__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 40px !important;
+    padding: 8px;
+    justify-content: center!important;
+    align-self: center !important;
+}
+.mat-mdc-card-content {
+    display: block;
+    padding:  16px !important;
+    
+}
+.card-padding{
+    padding: 16px !important;
+}

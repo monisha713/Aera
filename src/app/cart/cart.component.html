@@ -1,0 +1,45 @@
+<ng-container *ngIf="cartItemsShow.length != 0">
+    <div *ngFor = "let baitems of cartItemsShow">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>{{baitems.name}}</mat-card-title>
+            <mat-card-subtitle>
+                <table>
+                    <tr>
+                        <td>Price: {{baitems.price}}</td>
+                        <td>Total: {{baitems.total}}</td>
+                    </tr>
+                    <tr>
+                        <td>Quantity: {{baitems.quantity}}</td>
+                        <td></td>
+                    </tr>
+                </table>                 
+            </mat-card-subtitle>    
+            
+            <div class="example-button-row">
+                <div class="example-button-container">
+                    <button (click)='removeCartItem(baitems)' mat-fab color="warn" aria-label="Example icon button with a delete icon">
+                      <mat-icon>delete</mat-icon>
+                    </button>
+                  </div>         
+            </div>
+        
+            <img mat-card-lg-image src="{{baitems.image}}" >
+          </mat-card-title-group>
+        </mat-card-header>
+       
+      </mat-card>
+      <br>
+    </div>
+
+    Grand Total: {{grantTotal}}
+
+    </ng-container>
+
+    <ng-container *ngIf="cartItemsShow.length == 0">
+        <h4>Cart is  Empty</h4>
+            <h6>Add items now</h6>
+            <button routerLink="/home">Shop Now</button>
+
+    </ng-container>

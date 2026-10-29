@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+/* Default (Light Theme) */
+:root {
+    --bg-color: white;
+    --text-color: black;
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    --bg-color: #121212;
+    --text-color: white;
+  }
+  
+  /* Apply colors globally */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100%;
+  }
+
+  .example-card {
+    
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  
+

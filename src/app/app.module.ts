@@ -9,24 +9,28 @@ import { HomeComponent } from './home/home.component';
 import { BedacsComponent } from './bedacs/bedacs.component';
 import { SleepwearComponent } from './sleepwear/sleepwear.component';
 import { SleepgadgetComponent } from './sleepgadget/sleepgadget.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { BedacsitemsComponent } from './bedacsitems/bedacsitems.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './header/header.component';
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 import { CartComponent } from './cart/cart.component';
-import {NgIf} from '@angular/common';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { NgIf } from '@angular/common';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { ThemeToggleDirective } from './theme/theme-toggle.directive';
 
-const routes: Routes = [ 
-  { path: 'home', component: HomeComponent, children:[{ path: 'bditems', component: BedacsitemsComponent }] },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  
-  { path: 'bedacc', component: BedacsComponent}
+const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [{ path: 'bditems', component: BedacsitemsComponent }],
+  },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
+  { path: 'bedacc', component: BedacsComponent },
 ];
 
 @NgModule({
@@ -39,7 +43,7 @@ const routes: Routes = [
     BedacsitemsComponent,
     HeaderComponent,
     CartComponent,
-    ThemeToggleDirective
+    ThemeToggleDirective,
   ],
   imports: [
     BrowserModule,
@@ -47,12 +51,18 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatButtonModule, MatTooltipModule, MatIconModule,MatToolbarModule,MatBadgeModule,MatSidenavModule,NgIf,
+    MatButtonModule,
+    MatTooltipModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatBadgeModule,
+    MatSidenavModule,
+    NgIf,
     RouterModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   exports: [AppRoutingModule, RouterModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
